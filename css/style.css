@@ -135,3 +135,28 @@ body.collapsed .expand-btn i {
     transform:  rotate(-180deg);
 }
 
+@media only screen and (max-width: 480px) {
+    body.collapsed nav {
+        width: 0;
+        padding: 0;
+
+        .sidebar-links,
+        .logo,
+        .sidebar-top h3 {
+            display: none;
+        }
+        
+        .expand-btn {
+            right: -4rem;
+            transform: translateY(10px) translateX(-8px);
+            opacity: 1;
+            pointer-events: all;
+        }
+    }
+
+    .expand-btn {
+        opacity: 1;
+        pointer-events: all;
+    }
+}
+
